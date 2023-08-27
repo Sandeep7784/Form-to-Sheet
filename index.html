@@ -7,26 +7,73 @@
 		src="https://code.jquery.com/jquery-3.4.1.js"
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 		crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+        <link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<form id="myForm">
-		<label>Name</label>
-		<input name="Name" />
-		<br/>
-		<label>E-Mail</label>
-		<input name="E-Mail" />
-		<br/>
-		<label>Contact</label>
-		<input name="Contact" />
-		<br/>
-		<label>City</label>
-		<input name="City" />
-		<br/>
-		<label>Message</label>
-		<input name="Message" />
-		<br/>
-	</form>
-	<button class="btn" onclick='SubForm()'>Submit</button>
+    <!-- <header>
+        <h1 class="title">Form</h1>
+    </header>
+	<form class="in_form" id="myForm">
+		<label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <label for="Contact">Contact Number</label>
+            <input type="tel" name="Contact" id="Contact" placeholder="Enter your Contact Number">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="Enter your city">
+            <label for="message">Message</label>
+            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+        </form>
+        <div class="btn-container">
+            <button onclick='SubForm()' class="btn">Submit</button>
+        </div> -->
+
+        <div class="container">
+            <div class="text">
+               Contact us Form
+            </div>
+            <form id="myForm">
+               <div class="form-row">
+                  <div class="input-data">
+                     <input type="text" name="Name" required>
+                     <div class="underline"></div>
+                     <label for="">Name</label>
+                  </div>
+                  <div class="input-data">
+                    <input type="text" name="E-Mail" required>
+                    <div class="underline"></div>
+                    <label for="">Email Address</label>
+                 </div>
+               </div>
+               <div class="form-row">
+                <div class="input-data">
+                    <input type="tel" name="Contact" required>
+                    <div class="underline"></div>
+                    <label for="">Contact Number</label>
+                 </div>
+                  <div class="input-data">
+                     <input type="text" name="city" required>
+                     <div class="underline"></div>
+                     <label for="">City</label>
+                  </div>
+               </div>
+               <div class="form-row">
+               <div class="input-data textarea">
+                  <textarea rows="8" cols="80" name="Message" required></textarea>
+                  <br />
+                  <div class="underline"></div>
+                  <label for="">Write your message</label>
+                  <br />
+                  <div class="form-row submit-btn">
+                     <div class="input-data">
+                        <div class="inner"></div>
+                        <input onclick='SubForm()' type="submit" value="submit">
+                     </div>
+                  </div>
+            </form>
+            </div>
+        </div>
 </body>
 </html>
