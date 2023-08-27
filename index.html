@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<title>Save Web Form Data to Spreadsheets</title>
     <script src="script.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.js"
+		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <h1 class="title">Form</h1>
-    </header>
-    <main>
-        <form class="in_form">
-            <label for="name">Name</label>
-            <input type="text" name="Name" id="name" placeholder="Enter your name">
-            <label for="email">Email</label>
-            <input type="email" name="E-Mail" id="email" placeholder="Enter your email">
-            <label for="Contact">Contact Number</label>
-            <input type="tel" name="Contact" id="Contact" placeholder="Enter your Contact Number">
-            <label for="city">City</label>
-            <input type="text" name="City" id="city" placeholder="Enter your city">
-            <label for="message">Message</label>
-            <textarea name="Message" id="message" placeholder="Enter your message"></textarea>
-        </form>
-        <div class="btn-container">
-            <button class="btn" onclick="SubForm()">Submit</button>
-        </div>
-    </main>
+	<form id="myForm">
+		<label>Name</label>
+		<input name="Name" />
+		<br/>
+		<label>E-Mail</label>
+		<input name="E-Mail" />
+		<br/>
+		<label>Contact</label>
+		<input name="Contact" />
+		<br/>
+		<label>City</label>
+		<input name="City" />
+		<br/>
+		<label>Message</label>
+		<input name="Message" />
+		<br/>
+	</form>
+	<button class="btn" onclick='SubForm()'>Submit</button>
 </body>
 </html>
