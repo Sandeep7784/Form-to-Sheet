@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -13,18 +15,18 @@
     <main>
         <form class="in_form">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="Name" id="name" placeholder="Enter your name">
             <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <input type="email" name="E-Mail" id="email" placeholder="Enter your email">
             <label for="Contact">Contact Number</label>
             <input type="tel" name="Contact" id="Contact" placeholder="Enter your Contact Number">
             <label for="city">City</label>
-            <input type="text" name="city" id="city" placeholder="Enter your city">
+            <input type="text" name="City" id="city" placeholder="Enter your city">
             <label for="message">Message</label>
-            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+            <textarea name="Message" id="message" placeholder="Enter your message"></textarea>
         </form>
         <div class="btn-container">
-            <button class="btn">Submit</button>
+            <button class="btn" onclick="SubForm()">Submit</button>
         </div>
     </main>
 </body>
