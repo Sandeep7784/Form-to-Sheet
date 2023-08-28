@@ -27,7 +27,12 @@ function validateAndSubmit() {
             type:"post",
             data:$("#myForm").serializeArray(),
             success: function(){
-                alert("Form Data Submitted :)")
+                alert("Your message sent succesfully :)")
+                name.value = '';
+                email.value = '';
+                contact.value = '';
+                city.value = '';
+                message.value = '';
             },
             error: function(){
                 alert("There was an error :(")
