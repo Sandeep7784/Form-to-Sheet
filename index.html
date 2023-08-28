@@ -11,70 +11,56 @@
         <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- <header>
-        <h1 class="title">Form</h1>
-    </header>
-	<form class="in_form" id="myForm">
-		<label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email">
-            <label for="Contact">Contact Number</label>
-            <input type="tel" name="Contact" id="Contact" placeholder="Enter your Contact Number">
-            <label for="city">City</label>
-            <input type="text" name="city" id="city" placeholder="Enter your city">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
-        </form>
-        <div class="btn-container">
-            <button onclick='SubForm()' class="btn">Submit</button>
-        </div> -->
-
-        <div class="container">
-         <div class="text">
-            Contact us Form
-         </div>
-         <form id="myForm">
-            <div class="form-row">
-               <div class="input-data">
-                  <input type="text" name="Name" required>
-                  <div class="underline"></div>
-                  <label>Name</label>
-               </div>
-               <div class="input-data">
-                  <input type="text" name="E-Mail" required>
-                  <div class="underline"></div>
-                  <label>Email Address</label>
-               </div>
-            </div>
-            <div class="form-row">
-               <div class="input-data">
-                  <input type="text" name="Contact" required>
-                  <div class="underline"></div>
-                  <label>Contact Number</label>
-               </div>
-               <div class="input-data">
-                  <input type="text" name="city" required>
-                  <div class="underline"></div>
-                  <label>City</label>
-               </div>
-            </div>
-            <div class="form-row">
-               <div class="input-data textarea">
-                   <textarea rows="8" cols="80" name="Message" required></textarea>
-                   <br />
-                   <div class="underline"></div>
-                   <label>Write your message</label>
-                   <br />
-                   <div class="form-row submit-btn">
-                       <div class="input-data">
-                           <div class="inner"></div>
-                           <input onclick="validateAndSubmit()" type="button" value="submit">
-                       </div>
-                   </div>
-               </div>
-           </div>
-         </form>
+      <div class="container">
+      <div class="text">
+         Contact us Form
       </div>
+      <form id="myForm">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" name="Name" required>
+               <div class="underline"></div>
+               <label>Name</label>
+            </div>
+            <div class="input-data">
+               <input type="text" name="E-Mail" required>
+               <div class="underline"></div>
+               <label>Email Address</label>
+            </div>
+            <!-- <div class="input-data">
+               <input type="text" name="Company Domain" required>
+               <div class="underline"></div>
+               <label>Company Domain</label>
+            </div> -->
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" name="Contact" required>
+               <div class="underline"></div>
+               <label>Contact Number</label>
+            </div>
+            <div class="input-data">
+               <input type="text" name="city" required>
+               <div class="underline"></div>
+               <label>City</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data textarea">
+                  <textarea rows="8" cols="80" name="Message" required></textarea>
+                  <br />
+                  <div class="underline"></div>
+                  <label>Write your message</label>
+                  <br />
+                  <div class="form-row submit-btn">
+                     <div class="input-data">
+                        <div class="inner"></div>
+                        <input onclick="validateAndSubmit()" type="button" value="submit">
+                     </div>
+                  </div>
+            </div>
+         </div>
+      </form>
+   </div>
 </body>
 </html>
